@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/web.png">
+    <title>
+        Course catalog
+    </title>
+    <link rel="stylesheet" href="./assets/css/normolize.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- pop-up START-->
+    <div class="pop-up">
+        <div class="pop-up__content">
+            <h2 class="pop-up__title form-padding">
+                Profile
+            </h2>
+            <nav class="pop-up__nav form-padding">
+                <a href="#" class="pop-up__link pop-up__link--active">
+                    Registration
+                </a>
+                <a href="#" class="pop-up__link">
+                    Sign in
+                </a>
+            </nav>
+            <div class="pop-up__socials">
+                <p class="pop-up__socials-text">
+                    You can sign in with social
+                </p>
+                <div class="pop-up__socials-link">
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-vk">
+                            <use xlink:href="./assets/images/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-fb">
+                            <use xlink:href="./assets/images/sprite.svg#fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-gg">
+                            <use xlink:href="./assets/images/sprite.svg#google"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <form class="pop-up-form pop-up__is-active form-padding" action="#" method="POST">
+                <label class="pop-up-label pop-up-name">
+                    <input class="pop-up-input" placeholder="Your name" type="text" name="name">
+                </label>
+                <label class="pop-up-label pop-up-mail">
+                    <input class="pop-up-input" placeholder="E-mail" type="email" name="email">
+                </label>
+                <label class="pop-up-label pop-up-tel">
+                    <input class="pop-up-input" placeholder="Phone" type="tel" name="tel">
+                </label>
+                <div class="pop-up__privacy">
+                    <label class="pop-up-checkbox">
+                        <input class="pop-up-input" type="checkbox" value="accept" name="privacy">
+                    </label>
+                    <strong class="pop-up__privacy-text">
+                        I accept the terms of the offer of
+                        <a href="#" class="privacy-police">
+                            the privacy policy
+                        </a>
+                    </strong>
+                </div>
+                <button type="submit" class="pop-up-btn btn-registration">
+                    Registration
+                </button>
+                <button type="submit" class="pop-up-btn btn-signIn">
+                    Sign in
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- pop-up END-->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__row">
+                <a href="#" class="header__logo">
+                    Logo
+                </a>
+                <div class="menu">
+                    <nav class="menu__block">
+                        <a href="#" class="menu__link">
+                            Free test
+                        </a>
+                        <a href="#" class="menu__link menu__link--active">
+                            Catalog
+                        </a>
+                        <a href="#" class="menu__link">
+                            Help
+                        </a>
+                    </nav>
+                    <a href="#" class="menu__user">
+                        <h3 class="menu__name">
+                            Michael Browk
+                        </h3>
+                        <div class="menu__images">
+                            <img src="./assets/images/avatar.png" alt="lion: user avatar" class="menu__avatar">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <div class="wrapper">
+            <h2 class="catalog__title">
+                Course catalog
+            </h2>
+            <p class="catalog__text">
+                Each course contains video lectures, tasks, and text materials. 
+                All courses viewed by you are displayed in your personal account
+            </p>
+            <div class="catalog__info">
+                <div class="search">
+                    <div class="search__label">
+                        <svg class="icon">
+                            <use xlink:href="./assets/images/sprite.svg#lupa"></use>
+                        </svg>
+                        <input id="searchInput" type="text" placeholder="Search">
+                        <button type="button" class="search__btn-close"></button>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="select__header">
+                        <div class="select__current">
+                            <span class="select__label">
+                                Your country
+                            </span> 
+                            <input id="selectInput" type="text" placeholder="Your country">
+                            <button type="button" class="select__btn-close"></button>
+                        </div>
+                    </div>
+                    <div class="select__body">
+                        <span class="select__item">Russia</span>
+                        <span class="select__item">USA</span>
+                        <span class="select__item">Germany</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course">
+                <div class="course__box course__box-bg1">
+                    <div class="course__images">
+                        <span class="course__progress">
+                            Progress 12%
+                        </span>
+                        <div class="course__avatar">
+                            <img src="./assets/images/ava_1.png" alt="avatar: Alexa" class="avatar">
+                            <span class="course__avtor">
+                                Alexa
+                            </span>
+                        </div>
+                    </div>
+                    <div class="course__content">
+                        <h3 class="course__title">
+                            Take exam in Mathematics at 100 points
+                        </h3>
+                        <div class="course__info">
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#student"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 lessons
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon icon-pen">
+                                    <use xlink:href="./assets/images/sprite.svg#pen"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 tasks
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#video"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    30 minutes
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course__btns">
+                            <button type="button" class="course__btn course__continue">
+                                Continue
+                            </button>
+                            <button type="button" class="course__btn course__more">
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="course__box course__box-bg2">
+                    <div class="course__images">
+                        <span class="course__progress">
+                            Progress 12%
+                        </span>
+                        <div class="course__avatar">
+                            <img src="./assets/images/ava_2.png" alt="avatar: Kathryn Nguyen" class="avatar">
+                            <span class="course__avtor">
+                                Kathryn Nguyen
+                            </span>
+                        </div>
+                    </div>
+                    <div class="course__content">
+                        <h3 class="course__title">
+                            How buy new clothes without money in USA
+                        </h3>
+                        <div class="course__info">
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#student"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 lessons
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon icon-pen">
+                                    <use xlink:href="./assets/images/sprite.svg#pen"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 tasks
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#video"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    30 minutes
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course__btns">
+                            <button type="button" class="course__btn course__continue">
+                                Continue
+                            </button>
+                            <button type="button" class="course__btn course__more">
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="course__box course__box-bg3">
+                    <div class="course__images">
+                        <span class="course__progress">
+                            Progress 12%
+                        </span>
+                        <div class="course__avatar">
+                            <img src="./assets/images/ava_3.png" alt="avatar: Diane Miles" class="avatar">
+                            <span class="course__avtor">
+                                Diane Miles
+                            </span>
+                        </div>
+                    </div>
+                    <div class="course__content">
+                        <h3 class="course__title">
+                            Why people hate me?
+                        </h3>
+                        <div class="course__info course__info--margin">
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#student"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 lessons
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon icon-pen">
+                                    <use xlink:href="./assets/images/sprite.svg#pen"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    12 tasks
+                                </span>
+                            </div>
+                            <div class="course__info-box">
+                                <svg class="icon">
+                                    <use xlink:href="./assets/images/sprite.svg#video"></use>
+                                </svg>
+                                <span class="course__info-text">
+                                    30 minutes
+                                </span>
+                            </div>
+                        </div>
+                        <div class="course__btns">
+                            <button type="button" class="course__btn course__continue">
+                                Continue
+                            </button>
+                            <button type="button" class="course__btn course__more">
+                                More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
